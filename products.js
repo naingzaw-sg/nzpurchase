@@ -9,7 +9,7 @@ const products = [
         name: "Oppo A6 5G",
         condition: "Brand New",
         type: "new", 
-        price: "$339.00 SGD",
+        price: "$340.00 SGD",
         specs: "6GB RAM, 256GB Storage, 2 Year official warranty",
         image: "https://mobilesquare.com.sg/cdn/shop/files/A501EE75-2DEC-4138-ACBA-A84EE37D5E31.png?v=1775240352&width=360"
     },
@@ -18,7 +18,7 @@ const products = [
         name: "Samsung A07 4G",
         condition: "Brand New",
         type: "new",
-        price: "$125.00 SGD",
+        price: "$130.00 SGD",
         specs: "4GB RAM, 128GB Storage, 1 Year Official Warranty",
         image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a07.jpg"
     },
@@ -27,7 +27,7 @@ const products = [
         name: "Oppo A6 Pro 5G",
         condition: "Brand New",
         type: "new",
-        price: "$359.00 SGD",
+        price: "$360.00 SGD",
         specs: "8GB RAM, 256GB Storage, 2 Year official warranty",
         image: "https://mobilesquare.com.sg/cdn/shop/files/IMG-7124.png?v=1775240485&width=360"
     },
@@ -36,7 +36,7 @@ const products = [
         name: "Vivo Y31 5G",
         condition: "Brand New",
         type: "new",
-        price: "$339.00 SGD",
+        price: "$340.00 SGD",
         specs: "8GB RAM, 256GB Storage, 2 Year official warranty",
         image: "https://mobilesquare.com.sg/cdn/shop/files/FullSizeRender_714057e1-eabc-4df7-9b06-d7ad0f1ac6bc.jpg?v=1778780914&width=600"
     },
