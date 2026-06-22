@@ -1,43 +1,52 @@
 // သင့်ရဲ့ ဖုန်းနံပါတ် နဲ့ Messenger Username
-const whatsappNumber = "959123456789"; 
-const messengerId = "yourpageusername"; 
+const whatsappNumber = "6590826757"; 
+const messengerId = "naingzawvlog"; 
 
 // 🌟 Product စာရင်းများ 🌟
 const products = [
     {
-        brand: "Apple", // <-- Brand ကိုဒီလိုထည့်ပေးပါ
-        name: "iPhone 14 Pro Max",
-        condition: "Used (99%)",
-        type: "used", 
-        price: "2,500,000 MMK",
-        specs: "256GB Storage, Battery Health 95%, No error",
-        image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg"
+        brand: "Oppo", // <-- Brand ကိုဒီလိုထည့်ပေးပါ
+        name: "Oppo A6 5G",
+        condition: "Brand New",
+        type: "new", 
+        price: "$339.00 SGD",
+        specs: "6GB RAM, 256GB Storage, 2 Year official warranty",
+        image: "https://mobilesquare.com.sg/cdn/shop/files/A501EE75-2DEC-4138-ACBA-A84EE37D5E31.png?v=1775240352&width=360"
     },
     {
         brand: "Samsung",
-        name: "Galaxy S23 Ultra",
+        name: "Samsung A07 4G",
         condition: "Brand New",
         type: "new",
-        price: "3,200,000 MMK",
-        specs: "12GB RAM, 512GB Storage, Official Warranty",
-        image: "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s23-ultra-5g-1.jpg"
+        price: "$125.00 SGD",
+        specs: "4GB RAM, 128GB Storage, 1 Year Official Warranty",
+        image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a07.jpg"
     },
     {
-        brand: "Apple",
-        name: "iPad Air (5th Gen)",
-        condition: "Used (Good)",
-        type: "used",
-        price: "1,400,000 MMK",
-        specs: "64GB, Wi-Fi Only, Comes with Box",
-        image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-ipad-air-5th-gen-2022-1.jpg"
-    },
-    {
-        brand: "Xiaomi",
-        name: "Redmi Note 12",
+        brand: "Oppo",
+        name: "Oppo A6 Pro 5G",
         condition: "Brand New",
         type: "new",
-        price: "450,000 MMK",
-        specs: "8GB RAM, 128GB Storage, Fast Charging",
-        image: "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-12-4g-1.jpg"
+        price: "$359.00 SGD",
+        specs: "8GB RAM, 256GB Storage, 2 Year official warranty",
+        image: "https://mobilesquare.com.sg/cdn/shop/files/IMG-7124.png?v=1775240485&width=360"
+    },
+    {
+        brand: "Vivo",
+        name: "Vivo Y31 5G",
+        condition: "Brand New",
+        type: "new",
+        price: "$339.00 SGD",
+        specs: "8GB RAM, 256GB Storage, 2 Year official warranty",
+        image: "https://mobilesquare.com.sg/cdn/shop/files/FullSizeRender_714057e1-eabc-4df7-9b06-d7ad0f1ac6bc.jpg?v=1778780914&width=600"
+    },
+    {
+        brand: "Samsung",
+        name: "Samsung A17 4G",
+        condition: "Brand New",
+        type: "new",
+        price: "$195.00 SGD",
+        specs: "8GB RAM, 128GB Storage, 1 Year official warranty",
+        image: "https://mobilesquare.com.sg/cdn/shop/files/F60D7EF5-4F9F-4F3F-89AF-2C2B7BA3AB8C.jpg?v=1775198449&width=600"
     }
 ];
