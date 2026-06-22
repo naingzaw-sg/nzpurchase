@@ -48,5 +48,14 @@ const products = [
         price: "$195.00 SGD",
         specs: "8GB RAM, 128GB Storage, 1 Year official warranty",
         image: "https://mobilesquare.com.sg/cdn/shop/files/F60D7EF5-4F9F-4F3F-89AF-2C2B7BA3AB8C.jpg?v=1775198449&width=600"
+    },
+{
+        brand: "Vivo",
+        name: "Vivo Y05 4G",
+        condition: "Brand New",
+        type: "new",
+        price: "$190.00 SGD",
+        specs: "8GB RAM, 128GB Storage, 2 Year official warranty",
+        image: " https://mobilesquare.com.sg/cdn/shop/files/IMG-6524.png?v=1781774007&width=600 "
     }
 ];
