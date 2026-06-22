@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mobile Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📱 NZ Store</h1>
+        <p>Phone ~ Tablet Purchase Service</p>
+    </header>
+
+    <div class="container">
+        <div class="filter-section">
+            <div class="filter-group">
+                <button class="filter-btn active" onclick="filterCondition('all')">All (အားလုံး)</button>
+                <button class="filter-btn" onclick="filterCondition('new')">Brand New (အသစ်)</button>
+                <button class="filter-btn" onclick="filterCondition('used')">Used (အဟောင်း)</button>
+            </div>
+            <div class="filter-group">
+                <select id="brandFilter" class="brand-select" onchange="filterBrand(this.value)">
+                    <option value="all">All Brands (Brand အားလုံး)</option>
+                    </select>
+            </div>
+        </div>
+
+        <div class="product-grid" id="product-container"></div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
