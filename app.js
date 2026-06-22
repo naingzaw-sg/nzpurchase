@@ -7,8 +7,8 @@ let currentBrand = 'all';
 
 // ၁။ Brand အမည်များကို products.js မှ အလိုအလျောက် ဆွဲထုတ်ပြီး Dropdown တွင်ထည့်ရန်
 function loadBrands() {
-    // Brand အမည်များကို ထပ်မနေအောင် (Unique) ယူခြင်း
-    const uniqueBrands = [...new Set(products.map(p => p.brand))];
+    // Brand အမည်များကို ထပ်မနေအောင် (Unique) ယူပြီး A-Z အတိုင်း စီစဉ်ခြင်း
+    const uniqueBrands = [...new Set(products.map(p => p.brand))].sort();
     
     uniqueBrands.forEach(brand => {
         const option = document.createElement('option');
@@ -18,13 +18,14 @@ function loadBrands() {
     });
 }
 
-// ၂။ Product များကို Filter စစ်ပြီး ပြသရန် Function
+// ၂။ Product များကို Filter စစ်ခြင်း နှင့် အလိုအလျောက် စီစဉ်ခြင်း (Auto Sort)
 function renderProducts() {
     container.innerHTML = '';
     
-    // Filter စစ်ထုတ်ခြင်း (အသစ်/အဟောင်း နှင့် Brand)
-    let filteredProducts = products;
+    // မူရင်း Data ကိုမထိခိုက်စေရန် Copy ကူးယူခြင်း
+    let filteredProducts = [...products];
     
+    // Filter စစ်ထုတ်ခြင်း (အသစ်/အဟောင်း နှင့် Brand)
     if (currentCondition !== 'all') {
         filteredProducts = filteredProducts.filter(p => p.type === currentCondition);
     }
@@ -32,6 +33,23 @@ function renderProducts() {
     if (currentBrand !== 'all') {
         filteredProducts = filteredProducts.filter(p => p.brand === currentBrand);
     }
+
+    // 🌟 ဤနေရာသည် Auto Sort လုပ်ပေးသည့် အပိုင်းဖြစ်သည် 🌟
+    filteredProducts.sort((a, b) => {
+        // (က) Brand ကို A-Z အရင်စီမည်
+        const brandA = a.brand.toLowerCase();
+        const brandB = b.brand.toLowerCase();
+        if (brandA < brandB) return -1;
+        if (brandA > brandB) return 1;
+
+        // (ခ) Brand တူနေပါက 'new' ကို 'used' ထက် အရင်လာစေမည် (n က u ထက် အက္ခရာစဉ်စောသောကြောင့်ဖြစ်သည်)
+        const typeA = a.type.toLowerCase();
+        const typeB = b.type.toLowerCase();
+        if (typeA < typeB) return -1; 
+        if (typeA > typeB) return 1;
+
+        return 0; // အားလုံးတူနေပါက မူလအတိုင်းထားမည်
+    });
 
     // ရှာမတွေ့ပါက ပြရန်
     if (filteredProducts.length === 0) {
