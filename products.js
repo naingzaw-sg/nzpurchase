@@ -57,5 +57,14 @@ const products = [
         price: "$190.00 SGD",
         specs: "8GB RAM, 128GB Storage, 2 Year official warranty",
         image: " https://mobilesquare.com.sg/cdn/shop/files/IMG-6524.png?v=1781774007&width=600 "
+    },
+    {
+        brand: "Apple",
+        name: "MacBook Air 11 inch 2012",
+        condition: "Used",
+        type: "used",
+        price: "$110.00 SGD",
+        specs: "4GB RAM, 128GB Storage",
+        image: "macair.jpeg"
     }
 ];
